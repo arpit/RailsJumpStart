@@ -5,4 +5,7 @@
 			div
 				h4 Email
 				p= @user.email
-			div.push-left=image_tag @user.avatar.url(:thumb), class: 'img-responsive img-thumbnail'
+				- if @user.avatar.exists?
+					=image_tag @user.avatar.url(:thumb), class: 'img-responsive img-thumbnail'
+				- else
+					=image_tag 'default_avatar.jpg', class: 'img-circle img-thumbnail', width: '100'
