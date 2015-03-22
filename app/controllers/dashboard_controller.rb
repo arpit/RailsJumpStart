@@ -5,6 +5,8 @@ class DashboardController < ApplicationController
 		@user = current_user
 	end
 
+	# placeholder methods.
+
 	def show
 		
 	end
@@ -18,6 +20,7 @@ class DashboardController < ApplicationController
 	end
 
 	def edit
+
 	end
 
 	def update
@@ -27,22 +30,14 @@ class DashboardController < ApplicationController
 	def destroy
 		
 	end
-
-	def upvote
-		
-	end
-
-	def downvote
-		
-	end
-
+	
 	private
 
-	def find_post
+	def find_subject
 		
 	end
 
-	def post_params
+	def parsed_params
 		
 	end
 end
